@@ -7,3 +7,12 @@
     <rect x=0 y=0 width=100 height=50 />
     <circle class="svg-circle" cx="50" cy="50" r="10"/>
 </svg>
+
+// SVG이미지는 linked / inline 방식으로 배치할 수 있다.
+// 1. linked
+// HTML에서 img 태그 안에 넣거나, background-img: url(./my-image.svg)와 같이 CSS에 링크할 수 있다.
+// 하지만 SVG파일을 웹페이지에서 접근할 수 없다.
+// 2. inline
+// 웹페이지의 코드에 직접 SVG를 집어넣음으로써 CSS나 JavaScript로 동적 접근이 가능해진다.
+// 하지만, 코드의 가독성이 떨어지고, less cacheable해지며, 큰 SVG의 경우 나머지 HTML의 로딩이 느려질 수 있다.
+// 이러한 단점은 React와 같은 JavaScript library, 또는 webpack과 같은 build-tool로 극복 가능하다.
