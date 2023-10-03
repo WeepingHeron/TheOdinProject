@@ -1,0 +1,68 @@
+// ! + (enter)
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			.class {
+				position: relative;
+				background-color: #fff;
+				width: 10%;
+				height: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		// span
+		<span></span>
+		// div
+		<div></div>
+		// a
+		<a href=""></a>
+		// ---------------------------------------- // span.purple, span#id
+		<span class="purple"></span>
+		<span id="id"></span>
+		// ---------------------------------------- // div.class-1.class-2, div.class-1.class-2#id-1
+		<div class="class-1 class-2"></div>
+		<div class="class-1 class-2" id="id-1"></div>
+		// ---------------------------------------- // .class, .id
+		<div class="class"></div>
+		<div class="id"></div>
+		// ---------------------------------------- // div.purple>span.cyan
+		<div class="purple"><span class="cyan"></span></div>
+		// ---------------------------------------- // header>nav>ul>li*3.class-${List Item $$}
+		<header>
+			<nav>
+				<ul>
+					<li class="class-1">List Item 01</li>
+					<li class="class-2">List Item 02</li>
+					<li class="class-3">List Item 03</li>
+				</ul>
+			</nav>
+		</header>
+		// ---------------------------------------- // (header>h2{Heading}+nav>ol>li*5>a{Link $})+main+footer
+		<header>
+			<h2>Heading</h2>
+			<nav>
+				<ol>
+					<li><a href="">Link 1</a></li>
+					<li><a href="">Link 2</a></li>
+					<li><a href="">Link 3</a></li>
+					<li><a href="">Link 4</a></li>
+					<li><a href="">Link 5</a></li>
+				</ol>
+			</nav>
+		</header>
+		<main></main>
+		<footer></footer>
+		// ---------------------------------------- // form:post>(.group>label+input:text)+(.group>label+input:number)
+		<form action="" method="post">
+			<div class="group"><label for=""></label><input type="text" name="" id="" /></div>
+			<div class="group"><label for=""></label><input type="number" name="" id="" /></div>
+		</form>
+		// ----------------------------------------
+	</body>
+</html>
