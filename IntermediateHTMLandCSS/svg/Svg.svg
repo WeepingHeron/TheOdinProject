@@ -1,0 +1,9 @@
+// SVG(Scalable Vector Graphics)
+// 크기를 조절하더라도 화질에 영향x
+// XML(Extensible Markup Language)로 쓰였기 때문에, 읽을 수 있고, HTML과 상호 운용 가능.
+// 다만 아주 작은 부분까찌 XML로 작성해야 하므로 복잡한 이미지는 만들기 힘듬.
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <rect x=0 y=0 width=100 height=50 />
+    <circle class="svg-circle" cx="50" cy="50" r="10"/>
+</svg>
