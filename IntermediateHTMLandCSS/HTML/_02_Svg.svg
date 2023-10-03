@@ -16,3 +16,4 @@
 // 웹페이지의 코드에 직접 SVG를 집어넣음으로써 CSS나 JavaScript로 동적 접근이 가능해진다.
 // 하지만, 코드의 가독성이 떨어지고, less cacheable해지며, 큰 SVG의 경우 나머지 HTML의 로딩이 느려질 수 있다.
 // 이러한 단점은 React와 같은 JavaScript library, 또는 webpack과 같은 build-tool로 극복 가능하다.
+//
