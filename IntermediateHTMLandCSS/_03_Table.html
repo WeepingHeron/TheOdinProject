@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="_03_Table.css" />
+	</head>
+	<body>
+		// HTML Table 은 행과 열로 이루어진 2차원 표를 생성한다.
+    // button, link, list등처럼 자주 쓰이지는 않지만, table이 적격인 경우가 있다.
+    // table>(tr>th*2)+(tr>td*2)
+		<table>
+			<tr>
+				<th>First Header</th>
+				<th>Second Header</th>
+			</tr>
+			<tr>
+				<td>This is a data cell</td>
+				<td>This is also a data cell!</td>
+			</tr>
+		</table>
+		//----------------------------------------
+		<tr>
+			<td>Hi, I'm your first cell.</td>
+			<td>I'm your second cell.</td>
+			<td>I'm your third cell.</td>
+			<td>I'm your fourth cell.</td>
+		</tr>
+		<tr>
+			<td>Second row, first cell.</td>
+			<td>Cell 2.</td>
+			<td>Cell 3.</td>
+			<td>Cell 4.</td>
+		</tr>
+    // HTML Table을 쓰지 않아야 하는 이유
+    // 1. 시각 장애인의 접근성이 떨어짐
+    // screen reader를 통해 HTML의 태그를 통역할 경우, CSS layout에 비해 복잡해 혼란을 야기.
+    // 2. Table은 tag뭉치를 만듬.
+    // 복잡한 태그 덩어리를 만드므로, 작성, 유지보수, 디버깅에 불리.
+    // 3. 자동적으로 반응하지 않음
+    // header, section, article, div등의 경우 기본적으로 부모 요소의 너비의 100%를 가짐.
+    // 반면 table은 기본 사이즈가 있으므로, 추가 작업이 필요함.
+	</body>
+</html>
