@@ -1,0 +1,27 @@
+/*
+BackGround, Borders, box-shadow, Overflow, Opacity
+*/
+
+body {
+  /* Initial value */
+
+  background-image: none;
+  background-position: 0% 0%;
+  background-size: auto auto;
+  background-repeat: repeat;
+  background-origin: padding-box;
+  background-clip: border-box;
+  background-attachment: scroll;
+  background-color: transparent;
+
+  border-width: medium;
+  border-style: none;
+  border-color: currentColor;
+  border-radius: 0;
+
+  box-shadow: none;
+
+  overflow: visible;
+
+  opacity: 1;
+}
