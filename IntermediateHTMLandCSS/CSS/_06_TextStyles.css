@@ -1,0 +1,62 @@
+/* Method 1: System Fonts at the Element Level */
+/* System Fonts with system-ui */
+body {
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+/* The obvious limitation here is that you have to call that long list of fonts each time you want to apply it to an individual element. */
+/* Instead, you might consider making a CSS variable for it: */
+:root {
+  --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.element {
+  font-family: var(--system-ui);
+}
+/* This is certainly easier to read but is also more maintainable if the stack ever needs updating. Change it once and it applies everwhere! */
+
+/* Methd 2: System Font Stacks */
+/* Define the "system" font family */
+@font-face {
+  font-family: system-ui;
+  font-style: normal;
+  font-weight: 300;
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+/* Now, let's apply it on an element */
+body {
+  font-family: "system-ui";
+}
+
+/* To use a font from one of these libraries, go to the website, select a font and then copy a snippet from the website to import that font from their server into your website. You’ll be given either a <link> tag to put in your HTML like so… */
+/* <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> */
+/* … or an @import tag that can be dropped at the top of a CSS file. */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/*--------------------------------------------------------------------------------*/
+
+h1 {
+  font-family: 'COUTUREBold';
+  margin: 0;
+  font-size: 38px;
+}
+
+.wide {
+  font-size: 24px;
+  letter-spacing: .5em;
+}
+
+.narrow {
+  font-size: 48px;
+  letter-spacing: -.15em;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  display: flex;
+}
+
+p.line-height {
+  line-height: 1.5;
+}
