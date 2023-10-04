@@ -1,0 +1,11 @@
+/*
+Absolute length units
+cm, mm, Q, in, pc, pt, px
+
+Relative length units
+em, ex, ch, rem, 1h, r1h, vw, vh, vmin, vmax, vb, vi, svw, svh, 1vw, 1vh, dvw, dvh
+
+ems and rems
+The em is a relative unit that refers to the font-size of the parent’s element. So, if a parent’s font-size is 16px, then 1em would be 16px and 2em would be 32px. An important thing to realize with em is that if the font-size of an element changes, so does the value of em. So, if you set some element’s font size to 2em, and one of its children is also 2em, the calculated value of those 2 font-sizes will not be the same. The child will be double the size of the parent.
+A rem is very similar to an em except that instead of always referring to an element’s parent, it always refers to the font size of the root HTML element. So, in the previous example, if a parent and child both get 2rem, the calculated value will be the same.
+*/
