@@ -1,0 +1,81 @@
+/* undohtml.css */
+/* (CC) 2004 Tantek Celik. Some Rights Reserved.             */
+/*   http://creativecommons.org/licenses/by/2.0                   */
+/* This style sheet is licensed under a Creative Commons License. */
+
+/* Purpose: undo some of the default styling of common (X)HTML browsers */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+ abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+/*
+ * Remove the text shadow on text selections (opinionated).
+ * 1. Restore the coloring undone by defining the text shadow (opinionated).
+ */
+
+ ::-moz-selection {
+	background-color: #b3d4fc; /* 1 */
+	color: #000000; /* 1 */
+	text-shadow: none;
+}
+
+::selection {
+	background-color: #b3d4fc; /* 1 */
+	color: #000000; /* 1 */
+	text-shadow: none;
+}
+/*
+// Tables
+*/
+
+table {
+  border-collapse: collapse; /* Prevent double borders*/
+}
+
+caption {
+  padding-top: table-cell-padding;
+  padding-bottom: table-cell-padding;
+  color: text-muted;
+  text-align: left;
+  caption-side: bottom;
+}
+
+th {
+  /* Matches default `<td>` alignment by inheriting from the `<body>`, or the
+   closest parent with a set `text-align`.*/
+  text-align: inherit;
+}
