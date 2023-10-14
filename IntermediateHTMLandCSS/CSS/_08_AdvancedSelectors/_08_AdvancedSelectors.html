@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="_08_AdvancedSelectors.css">
+<main class="parent">
+  <div class="child group1">
+    <div class="grand-child group1"></div>
+  </div>
+  <div class="child group2">
+    <div class="grand-child group2"></div>
+  </div>
+  <div class="child group3">
+    <div class="grand-child group3"></div>
+  </div>
+</main>
+
+<!-- ----------------------------------- -->
+
+<style>
+  .emojify::before {
+    content: '😎 🥸 🤓';
+}
+
+  .emojify::after {
+    content: '🤓 🥸 😎';
+}
+</style>
+
+<body>
+  <div> Let's <span class="emojify">emojify</span>this span!</div>
+</body>
